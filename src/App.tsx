@@ -1,21 +1,13 @@
-import React from 'react';
-;
+import React from "react";
+import {Greeting} from "./components/greeting/Greeting";
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
-  return (
-    <div>
-       
-
-      <h1>
-        Test 1
-        Test 2  
-       test 
-      </h1>
-
-
-
-    </div>
-  );
+	return (
+		<>
+			<Greeting />
+		</>
+	);
 }
 
 export default App;
