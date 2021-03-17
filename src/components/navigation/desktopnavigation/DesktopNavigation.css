@@ -1,0 +1,11 @@
+.desktopnavigationWrapper{
+    display: grid;
+
+    grid-template-columns: repeat(20,1fr); 
+    background-color:rgb(250, 249, 250) ;
+}
+/* .navigationLogotype{
+    width: 900px ;
+}*/
+
+
