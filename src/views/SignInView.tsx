@@ -12,7 +12,7 @@ export const SignInView = () => {
 
 	const signIn = () =>{
 		history.push(RoutingPath.homeView);
-
+		localStorage.setItem("user",loginCredentials.username); 
 	};
 	return (
 		
