@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import {loginCredentials} from "../shared/interface/interface";
+import {loginCredentials} from "../shared/interface/Interface";
 import {useHistory } from "react-router-dom";
 import RoutingPath from "../routes/RoutingPath";
 
