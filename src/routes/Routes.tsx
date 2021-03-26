@@ -4,13 +4,23 @@ import { HomeView } from "../views/HomeView";
 import { AboutView } from "../views/AboutView";
 import RoutingPath from "./RoutingPath";
 import { SignInView } from "../views/SignInView";
+import { UserContext } from "../shared/provider/UserProvider";
+import {useEffect, useContext} from "react";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const Routes = (props: {children: React.ReactChild}) => {
+	
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const { children } = props ;  
-	return(
+	const [authUser, setAuthUser] = useContext(UserContext);
+	const { children } = props ; 
+	
+	useEffect(() => {
+		setAuthUser({username :localStorage.getItem("user")});
+		
+	} ,[]);
+	return(	
 		<BrowserRouter> 
+			{children}
 			<Switch>
 				< Route exact path={RoutingPath.homeView} component={HomeView} />
 				< Route exact path={RoutingPath.aboutView} component={AboutView} />

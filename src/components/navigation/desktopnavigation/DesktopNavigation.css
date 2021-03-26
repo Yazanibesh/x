@@ -9,3 +9,7 @@
 	grid-column: 3/4;
 	padding: 2%;
 }
+.signInButton,
+	.profile{
+	grid-column: 15/16;
+}

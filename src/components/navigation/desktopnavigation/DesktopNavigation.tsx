@@ -2,7 +2,7 @@ import React from "react";
 import { useContext} from "react";
 import { UserContext} from "../../../shared/provider/UserProvider";
 import "./DesktopNavigation.css";
-import Logotype from "../../../shared/images/logotype.svg"; 
+import haha from "../../../shared/images/logotype.svg";
 import { useHistory } from "react-router-dom";
 import RoutingPath from "../../../routes/RoutingPath";
 import {Profile} from "../../profile/Profile";
@@ -13,8 +13,8 @@ export const  DesktopNavigation = () => {
 	const [authUser, setAuthUser] = useContext(UserContext);
 	const displaySignInButtomOrUsernameDepandingOnAuthentication = () =>{
 		return authUser
-			? <Profile/>
-			: <span onClick={ () => history.push(RoutingPath.signInView)}>Signin</span>;
+			? <div className ="profile"><Profile/> </div>
+			: <span className = "singInButton" onClick={ () => history.push(RoutingPath.signInView)}>Sign in</span>;
 
 		
 	};
@@ -22,14 +22,13 @@ export const  DesktopNavigation = () => {
 	return (
 		<div className = "desktopNavigationWrapper">
 			<img className = "navigationLogotype"
-				src = { Logotype }
+				src = { haha }
 				alt = {" "} />
 
 			<span onClick = {() => history.push(RoutingPath.homeView)}>Products</span>
 			<span onClick = {() => history.push(RoutingPath.homeView)}>Brands</span>
 			<span onClick = {() => history.push(RoutingPath.homeView)}>News</span>
 			<span onClick = {() => history.push(RoutingPath.homeView)}>Guidline</span>
-			<span onClick = {() => history.push(RoutingPath.signInView)}>Sign in</span>
 			{displaySignInButtomOrUsernameDepandingOnAuthentication()}
 			
 		</div>
