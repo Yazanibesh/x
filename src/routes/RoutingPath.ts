@@ -1,11 +1,20 @@
 const homeView = "/";
-const aboutView ="/about";
 const signInView ="/signin";
+const accessoriesView = "/accessories";
+const brandsView = "/brands";
+const expertiesView = "/experties";
+const newsView = "/news";
+const shopView = "/shop";
 
 export default{
 
 	homeView,
-	aboutView,
-	signInView
+	signInView,
+	accessoriesView,
+	brandsView,
+	expertiesView,
+	newsView,
+	shopView
+
 
 };

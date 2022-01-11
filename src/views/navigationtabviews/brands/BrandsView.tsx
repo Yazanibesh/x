@@ -1,10 +1,10 @@
 import React from "react";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const AboutView = () => {
+export const BrandsView = () => {
 	return (
 		<div>
-			<h1>This is the about view</h1>
+			<h1>this is the brandsview </h1>
 		</div>
 	);
 };

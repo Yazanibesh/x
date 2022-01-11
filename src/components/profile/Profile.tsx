@@ -2,6 +2,7 @@ import React from "react";
 import {useContext} from "react"; 
 import { UserContext} from "../../shared/provider/UserProvider";
 import "./Profile.css";
+import { ProfileDropDown } from "./profiledropdown/ProfileDropDown";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const Profile = () => {
@@ -11,13 +12,7 @@ export const Profile = () => {
 		<div className = "profileWrapper">
 			<img className="profileImg" src ={"https://thispersondoesnotexist.com/image"} alt ={""} />
 			{authUser.username}
-			<div className="profileDropDown">
-				<span>alternative 1 </span>
-				<span>alternative 2 </span>
-				<span>alternative 3 </span>
-				<span>alternative 4 </span>
-				<span>alternative 5 </span>
-			</div>
+			<ProfileDropDown/>
 		</div>
 	);
 };

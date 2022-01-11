@@ -6,9 +6,12 @@ import haha from "../../../shared/images/logotype.svg";
 import { useHistory } from "react-router-dom";
 import RoutingPath from "../../../routes/RoutingPath";
 import {Profile} from "../../profile/Profile";
+import { DesktopNavigationTabs } from "./desktopnavigationtabs/DesktopNavigationTabs";
+
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const  DesktopNavigation = () => {
 	const history = useHistory();
+	
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [authUser, setAuthUser] = useContext(UserContext);
 	const displaySignInButtomOrUsernameDepandingOnAuthentication = () =>{
@@ -24,11 +27,9 @@ export const  DesktopNavigation = () => {
 			<img className = "navigationLogotype"
 				src = { haha }
 				alt = {" "} />
-
-			<span onClick = {() => history.push(RoutingPath.homeView)}>Products</span>
-			<span onClick = {() => history.push(RoutingPath.homeView)}>Brands</span>
-			<span onClick = {() => history.push(RoutingPath.homeView)}>News</span>
-			<span onClick = {() => history.push(RoutingPath.homeView)}>Guidline</span>
+			<div className ="desktopNavigationTabs" >
+				<DesktopNavigationTabs />
+			</div>	
 			{displaySignInButtomOrUsernameDepandingOnAuthentication()}
 			
 		</div>

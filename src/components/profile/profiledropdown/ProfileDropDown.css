@@ -1,0 +1,12 @@
+.profileDropDown span {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+
+}
+.profileDropDown{
+    display : none;
+    position : absolute;
+    background-color: rgb(70, 68, 68);
+}

@@ -12,4 +12,15 @@
 .signInButton,
 	.profile{
 	grid-column: 15/16;
+	cursor: pointer;
+    color: white;
+    font-weight: 1000;
+    font-family: "Raboto",sans-serif;
+    padding: 6%;
+}
+.desktopNavigationTabs {
+	grid-column: 7/9;
+	align-items: center;
+	justify-self: center;
+
 }

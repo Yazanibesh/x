@@ -2,20 +2,8 @@
     width : 50px ;
     border-radius: 50% ;
 }
-.profileDropDown{
-    display : none;
-    position : absolute;
-    background-color: rgb(70, 68, 68);
-}
 
 .profileWrapper:hover .profileDropDown {
     display :block;
-
-}
-.profileDropDown span {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    color: white;
 
 }
